@@ -1,0 +1,30 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "$8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    }, 
+    {
+      "make": "Honda",
+      "model": "Pilot",
+      "year": "2011",
+      "price": "$10,000",
+      "color": "Black",
+      "purchased": false,
+      "description": "This is an immaculate 2011 Honda Pilot with only 100,000 miles on it. Leather seats, power everything."
+    },
+    {"make": "Toyota",
+      "model": "Camry",
+      "year": "2009",
+      "price": "$7000",
+      "color": "White",
+      "purchased": false,
+      "description": "This is an immaculate 2009 Toyota Camry with only 60,000 miles on it. Leather seats, power everything."
+    }
+  ]
+}
