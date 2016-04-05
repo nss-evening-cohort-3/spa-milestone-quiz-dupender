@@ -9,3 +9,8 @@
 .blue{
   border: 2px solid blue;
 }
+
+.clicked{
+  border-width: 4px ;
+  background-color: Cyan;
+}
