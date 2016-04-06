@@ -6,11 +6,18 @@ var CarLot = (function (originalCarLot) {
     for (var i = 0; i < inventory.length; i++) {
       let selected = document.getElementById(`eachCar${[i]}`)
       selected.addEventListener("click", function(e) {
+        // increase border width and add background color to eachCar element
+        // reset must come first and THEN set due to CSS cascading 
+        CarLot.resetBorderBackground();
+        CarLot.setBorderBackground(selected,'cyan');
+        
         // clickedID targets carDescription0(,1 & 2) individually & gives access of carDescription to mirrorText below
         clickedID = e.target.parentElement.lastChild.id
-        console.log("e",clickedID);
+        // console.log("e",clickedID);
+
         // increase border width and add background color to eachCar element  
-        selected.classList.add("clicked");  
+        // selected.classList.add("clicked"); NOW DONE in finalIIFE and called above: CarLot.resetBorderBackground and CarLot.setBorderBackground
+
         // clear input field on nav bar 
         document.getElementById('inputBar').value = "";
         // put focus on inputBar
