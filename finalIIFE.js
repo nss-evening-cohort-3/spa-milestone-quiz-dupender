@@ -7,7 +7,8 @@ var CarLot = (function (originalCarLot){
     selected.style.backgroundColor = color;
     selected.style.border = "4px solid yellow";
     console.log(selected.style.border );
-  }
+    };
+  // }
 
   originalCarLot.resetBorderBackground = function(){
   let cars = document.getElementsByClassName("car");

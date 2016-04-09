@@ -6,7 +6,7 @@ function populatePage(inventory) {
     let output=document.getElementById("output");
   for (var i = 0; i < inventory.length; i++) {
     let currentCar = inventory[i];
-    outputString +=`<div class="col-xs-4"><div id="eachCar${i}" class="car"><p>${currentCar.year}  ${currentCar.make}  ${currentCar.model}</p><p>Price:  ${currentCar.price}</p>  Color:  ${currentCar.color}  <p>${currentCar.purchased}</p><p id="carDescription${i}">Description:  ${currentCar.description}</p></div></div>`
+    outputString +=`<div class="col-xs-4"><div id="eachCar${i}" class="car"><p>${currentCar.year}  ${currentCar.make}  ${currentCar.model}</p><p>Price:  ${currentCar.price}</p><p>  Color:  ${currentCar.color}  </p><p>${currentCar.purchased}</p><p id="carDescription${i}">Description:  ${currentCar.description}</p></div></div>`
 
       output.innerHTML = outputString;
       };
